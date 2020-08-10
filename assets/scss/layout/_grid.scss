@@ -1,7 +1,6 @@
 .main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 
@@ -13,6 +12,8 @@
     &__news {
         grid-column: 1 / 4;
         background-color: green;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     &__sidebar {

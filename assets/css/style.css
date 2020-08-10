@@ -1,10 +1,17 @@
 /*
 Revista 
 */
+.main__news__single {
+  padding: 20px;
+}
+.img-box {
+  width: 100%;
+  height: auto;
+}
+
 .main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
@@ -15,6 +22,8 @@ Revista
 .main__news {
   grid-column: 1/4;
   background-color: green;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .main__sidebar {
   grid-column: 4/5;
