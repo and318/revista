@@ -1,0 +1,24 @@
+/*
+Revista 
+*/
+
+//abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+
+//base
+@import "base/reset";
+
+//components 
+@import "components/buttons";
+
+//layout
+@import "layout/navigation";
+@import "layout/sections";
+@import "layout/grid";
+@import "layout/sidebar";
+@import "layout/footer";
+
+//pages
+@import "pages/home"
