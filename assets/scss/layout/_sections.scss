@@ -16,11 +16,11 @@ body {
         & li {
             align-self: center;
         }
-        & a {
+        a {
             text-decoration: none;
         }    
-        & input {
-            border-radius: 20px;
+        input {
+            border-radius: 1.25rem;
         }
         }
     }
@@ -28,11 +28,32 @@ body {
     
     
     &__news {
+        padding: 0 1.25rem;
         &__single {
             padding: 1.25rem;
             h4 {
                 font-size: 1.25rem;
             }
+        }
+    }
+
+    &__sidebar {
+        padding: 1.25rem;
+        h4 {
+            font-size: 1.25rem;
+        }
+        &__box {
+            border-bottom: 1px solid $primary;
+            padding-bottom: 0.625rem;
+        &:last-child {
+            border: none;
+        }
+        &__box__tags {
+            color:$secondary;
+            background-color: $third;
+            padding: 0.1875rem;
+            clear: both;
+        }
         }
     }
 

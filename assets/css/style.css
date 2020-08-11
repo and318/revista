@@ -24,13 +24,35 @@ body {
   text-decoration: none;
 }
 .main__navbar__links input {
-  border-radius: 20px;
+  border-radius: 1.25rem;
+}
+.main__news {
+  padding: 0 1.25rem;
 }
 .main__news__single {
   padding: 1.25rem;
 }
 .main__news__single h4 {
   font-size: 1.25rem;
+}
+.main__sidebar {
+  padding: 1.25rem;
+}
+.main__sidebar h4 {
+  font-size: 1.25rem;
+}
+.main__sidebar__box {
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.625rem;
+}
+.main__sidebar__box:last-child {
+  border: none;
+}
+.main__sidebar__box__box__tags {
+  color: #fff;
+  background-color: steelblue;
+  padding: 0.1875rem;
+  clear: both;
 }
 
 .img-box {
