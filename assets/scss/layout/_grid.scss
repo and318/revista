@@ -21,10 +21,25 @@
         grid-column: 1 / 4;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        @media screen and (max-width: $bp-md) {
+            grid-column: 1 / 4;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media screen and (max-width: $bp-sm) {
+            grid-column: 1 / 5;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
     }
 
     &__sidebar {
         grid-column: 4 / 5;
+        @media screen and (max-width: $bp-sm) {
+            
+                display: none;
+            
+        }
     }
 
     &__footer {

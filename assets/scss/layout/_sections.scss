@@ -13,9 +13,19 @@ body {
         &__links {
             padding: 0;
             list-style: none;
+            text-transform: uppercase;
         & li {
             align-self: center;
+            padding: 0 0.625rem;
+            @media screen and (max-width: $bp-sm) {
+                
+                &:first-child
+        { display: none;
         }
+              }
+            
+        }
+      
         a {
             text-decoration: none;
         }    
@@ -54,6 +64,24 @@ body {
             padding: 0.1875rem;
             clear: both;
         }
+        }
+    }
+    &__footer {
+        text-align: center;
+        
+        &__upper {
+            background-color: $footer;
+            padding: 1.25rem;
+            & input {
+                padding: 4px 10px;
+                &.btn {
+                    background-color:$btn;
+                    color: $secondary;
+                    
+                    border: none;
+                    font-size: 14px;
+                }
+            }
         }
     }
 
