@@ -5,42 +5,48 @@ body {
 .main {
     &__navbar {
         border-bottom: 1px solid $primary;
+
         &__brand {
             font-weight: bold;
             font-size: 1.4375rem;
             padding: 1.25rem 0.9375rem;
         }
+
         &__links {
             padding: 0;
             list-style: none;
             text-transform: uppercase;
-        & li {
-            align-self: center;
-            padding: 0 0.625rem;
-            @media screen and (max-width: $bp-sm) {
-                
-                &:first-child
-        { display: none;
-        }
-              }
-            
-        }
-      
-        a {
-            text-decoration: none;
-        }    
-        input {
-            border-radius: 1.25rem;
-        }
+
+            & li {
+                align-self: center;
+                padding: 0 0.625rem;
+
+                @media screen and (max-width: $bp-sm) {
+                    &:first-child {
+                        display: none;
+                    }
+                }
+
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            input {
+                border-radius: 1.25rem;
+            }
         }
     }
-    
-    
-    
+
+
+
     &__news {
         padding: 0 1.25rem;
+
         &__single {
             padding: 1.25rem;
+
             h4 {
                 font-size: 1.25rem;
             }
@@ -49,35 +55,42 @@ body {
 
     &__sidebar {
         padding: 1.25rem;
+
         h4 {
             font-size: 1.25rem;
         }
+
         &__box {
             border-bottom: 1px solid $primary;
             padding-bottom: 0.625rem;
-        &:last-child {
-            border: none;
-        }
-        &__box__tags {
-            color:$secondary;
-            background-color: $third;
-            padding: 0.1875rem;
-            clear: both;
-        }
+
+            &:last-child {
+                border: none;
+            }
+
+            &__box__tags {
+                color: $secondary;
+                background-color: $third;
+                padding: 0.1875rem;
+                clear: both;
+            }
         }
     }
+
     &__footer {
         text-align: center;
-        
+
         &__upper {
             background-color: $footer;
             padding: 1.25rem;
+
             & input {
                 padding: 4px 10px;
+
                 &.btn {
-                    background-color:$btn;
+                    background-color: $btn;
                     color: $secondary;
-                    
+
                     border: none;
                     font-size: 14px;
                 }
@@ -86,7 +99,8 @@ body {
     }
 
 }
+
 .img-box {
     width: 100%;
-    height:auto;
+    height: auto;
 }
