@@ -6,23 +6,28 @@
 
     &__navbar {
         grid-column: 1 / 5;
-        background-color: red;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        &__brand {
+            grid-column: 1 / 4;
+        }
+        &__links {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 
     &__news {
         grid-column: 1 / 4;
-        background-color: green;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 
     &__sidebar {
         grid-column: 4 / 5;
-        background-color: blue;
     }
 
     &__footer {
         grid-column: 1 / 5;
-        background-color: skyblue;
     }
 }

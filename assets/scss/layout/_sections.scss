@@ -1,12 +1,41 @@
+body {
+    font-family: monospace;
+}
+
 .main {
+    &__navbar {
+        border-bottom: 1px solid $primary;
+        &__brand {
+            font-weight: bold;
+            font-size: 1.4375rem;
+            padding: 1.25rem 0.9375rem;
+        }
+        &__links {
+            padding: 0;
+            list-style: none;
+        & li {
+            align-self: center;
+        }
+        & a {
+            text-decoration: none;
+        }    
+        & input {
+            border-radius: 20px;
+        }
+        }
+    }
+    
+    
+    
     &__news {
         &__single {
-            padding: 20px;
+            padding: 1.25rem;
             h4 {
-                
+                font-size: 1.25rem;
             }
         }
     }
+
 }
 .img-box {
     width: 100%;

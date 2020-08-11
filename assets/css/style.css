@@ -1,9 +1,38 @@
 /*
 Revista 
 */
-.main__news__single {
-  padding: 20px;
+body {
+  font-family: monospace;
 }
+
+.main__navbar {
+  border-bottom: 1px solid #000;
+}
+.main__navbar__brand {
+  font-weight: bold;
+  font-size: 1.4375rem;
+  padding: 1.25rem 0.9375rem;
+}
+.main__navbar__links {
+  padding: 0;
+  list-style: none;
+}
+.main__navbar__links li {
+  align-self: center;
+}
+.main__navbar__links a {
+  text-decoration: none;
+}
+.main__navbar__links input {
+  border-radius: 20px;
+}
+.main__news__single {
+  padding: 1.25rem;
+}
+.main__news__single h4 {
+  font-size: 1.25rem;
+}
+
 .img-box {
   width: 100%;
   height: auto;
@@ -17,21 +46,26 @@ Revista
 }
 .main__navbar {
   grid-column: 1/5;
-  background-color: red;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.main__navbar__brand {
+  grid-column: 1/4;
+}
+.main__navbar__links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .main__news {
   grid-column: 1/4;
-  background-color: green;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 .main__sidebar {
   grid-column: 4/5;
-  background-color: blue;
 }
 .main__footer {
   grid-column: 1/5;
-  background-color: skyblue;
 }
 
 /*# sourceMappingURL=style.css.map */
